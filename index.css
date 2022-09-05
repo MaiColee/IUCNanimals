@@ -1,0 +1,38 @@
+.mainjumbo {
+    background-color: #da2a1c;
+    color: white;
+    height: 440px;
+}
+.sidejumbo{
+    background-color: #da2a1c;
+    color: white;
+}
+.mainbutton {
+    background-color: black;
+}
+#middiv{
+    display: flex;
+  justify-content: center;
+}
+#level{
+display: flex;
+  align-items: center;
+    justify-content: center;}
+#scroll{
+    background-color: black;
+    color: white;
+}
+.defDesc{
+    background-color: #da2a1c;
+    color: white;
+    border-radius: 25px;
+}
+.hideimg
+{
+    opacity:0;
+}
+#footer
+{
+    background-color: #da2a1c;
+    color: white;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNESCO Red List Animal of the Day!</title>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script src="js/jquery-3.4.1.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+    
+
+    $(window).scroll( function(){
+
+        $('.hideimg').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});    
+</script>
+<div class="jumbotron jumbotron-fluid text-center mainjumbo" id="primejumbo">
+  <h1 class="display-4"><img src="images/logo.png" alt="IUCN Logo"></h1>
+  <h1 class="display-4">Animal of the day!&nbsp;</h1>
+  <p class="lead">This site features an animal from the IUCN Red List of Endangered Animals every day!</p>
+  <p class="lead"> <a href="#" class="btn btn-outline-danger btn-lg mainbutton" id="topbutton" role="button">Learn more</a> </p>
+  <div class="row text-center" id="scroll">
+    <div class="container"> &nbsp;
+      <h1 class="lead text-center"><strong>Scroll down to find out your animal of the day!</strong></h1>
+&nbsp; </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row text-center hideimg">
+    <div class="col-lg-6 offset-lg-3">
+      <p class="lead">Todays animal is the:</p>
+      <h1 class="display-4"><strong>Poison dart frog</strong></h1>
+    </div>
+  </div>
+  <br>
+  <hr class="hideimg">
+  <br>
+  <div class="row hideimg">
+    <div class="col-10"> <img src="images/dartfrog.jpg" class="img-fluid" alt=""> </div>
+    <div class="col-2" id="level"> <img src="images/en.svg" class="img-fluid rounded" alt="Endangerment status"> <br>
+      <img src="images/range.png" class="img-fluid rounded" alt="Endangerment status"> </div>
+  </div>
+  <br>
+  <div class="row text-center" id="middiv"> &nbsp;
+    <p class="lead"> <a href="#" class="btn btn-outline-danger btn-lg mainbutton" id="midbutton" role="button">Learn more</a> </p>
+    &nbsp;
+    <div class="offset-lg-0 col-lg-12 hideimg defDesc">
+      <p>Poison dart frog (also known as dart-poison frog, poison frog or formerly known as poison arrow frog) is the common name of a group of frogs in the family Dendrobatidae which are native to tropical Central and South America. These species are diurnal and often have brightly colored bodies.</p>
+      <p>&nbsp;This bright coloration is correlated with the toxicity of the species, making them aposematic. Some species of the family Dendrobatidae exhibit extremely bright coloration along with high toxicity, while others have cryptic coloration with minimal to no amount of observed toxicity.&nbsp;</p>
+      <p>The species that have great toxicity derive this from their diet of ants, mites and termites. Other species however, that exhibit cryptic coloration and low to no amounts of toxicity, eat a much larger variety of pray.</p>
+      <p>&nbsp;Many species of this family are threatened due to human infrastructure encroaching on their habitats.</p>
+    </div>
+  </div>
+  <br>
+  <hr class="hideimg">
+  <div class="row text-center">
+    <div class="offset-lg-0 col-lg-12 defDesc hideimg">
+      <p class="lead">PLACEHOLDER ANIMAL DESCRIPTION</p>
+    </div>
+  </div>
+  <br>
+  <hr class="hideimg">
+  <div class="jumbotron jumbotron-fluid text-center col-lg-12 sidejumbo hideimg defDesc">
+    <p class="lead"><strong>We hope to call attention to the growing concerns over animal preservation.</strong></p>
+    <p class="lead"> <a href="#" class="btn btn-outline-danger btn-lg mainbutton" id="botbutton" role="button">Learn more</a> </p>
+  </div>
+</div>
+</body>
+</html>
